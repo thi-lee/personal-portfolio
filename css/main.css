@@ -8,6 +8,7 @@ Soft Grey: #d0d1d3
 */
 
 html body {
+    font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
     height: 100%;
 }
@@ -16,21 +17,9 @@ html body {
     box-sizing: inherit;
 }
 
-/* Navigation bar */
-/* 
-<nav id="navbar">
-    <ul>
-        <li><a id="welcome-nav" href="#welcome">Welcome</a></li>
-        <li><a id="project-nav" href="#projects">Projects</a></li>
-        <li><a id="about-nav" href="#about">About</a></li>
-        <li><a id="profile-link" href="https://github.com/thi-lee" target="_blank">Github</a></li>
-    </ul>
-</nav> 
-*/
-
 #navbar {
     padding: 20px;
-    background-color: #4d1635;
+    background-color: #5e7783;
     font-size: 130%;
 }
 
@@ -73,25 +62,9 @@ h1 {
 }
 
 /* Projects */
-/* 
-<section id="projects">
-    <div class="project-tile tribute-page">
-        <a href="https://codepen.io/thi-lee/full/abmbbvK" target="_blank">Tribute Page</a>
-    </div>
-    <div class="project-tile technical-documentation">
-        <a href="https://codepen.io/thi-lee/full/RwGwwrz" target="_blank">Technical Documentation</a>
-    </div>
-    <div class="project-tile product-landing">
-        <a href="https://codepen.io/thi-lee/full/qBaBBNQ" target="_blank">Product Landing Page</a>
-    </div>
-    <div class="project-tile survey-form">
-        <a href="https://codepen.io/thi-lee/full/WNGNNGo" target="_blank">Survey Form</a>
-    </div>
-</section> 
-*/
 
 #projects {
-    height: 100vh;
+    padding-bottom: 50px;
 }
 
 #projects-display {
@@ -119,3 +92,98 @@ h1 {
 a {
     text-decoration: none;
 }
+
+.project-tile {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .3s ease;
+    background-color: #5e7783;
+    text-align: center;
+  }
+
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .3s ease;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .project-tile:hover .overlay {
+    opacity: 0;
+  }
+
+  .project-tile:hover .overlay1 {
+    opacity: 0;
+  }
+  
+  .text a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-style: dotted;
+    border-width: 4px;
+    border-color: white;
+    padding: 70px;
+  }
+
+  .text1 a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-decoration: none;
+    color:#5e7783;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-style: dotted;
+    border-width: 4px;
+    border-color: #5e7783;
+    padding: 70px;
+  }
+
+  /* About */
+
+  #about {
+      background-color: #5e7783;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+
+  #about-text, #about-title{
+    color: white;
+}
+
