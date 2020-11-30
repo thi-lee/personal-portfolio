@@ -183,7 +183,13 @@ a {
       align-items: center;
   }
 
-  #about-text, #about-title{
+  #about-text, #about-title, a {
     color: white;
+    line-height: 30px;
+}
+
+#icon-group {
+    display: flex;
+    justify-content: space-evenly;
 }
 
