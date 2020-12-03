@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/reset.css" media="all"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css" media="all"/>
+    </head>
+    <body id="container">
+        <section id="header">
+            <h1 id="title" style="background-color: lightgray"> COACHING SESSION 28-11: <br>MENTAL BREAKDOWN</h1>
+            <p id="description" style="background-color: lightgray">Hi there! Please fill out this super quick survey, so that we have an overview of what aspects you are concerned about. For your privacy, all responses are ANONYMOUS. So, please feel free to share your own experiences regarding this topic. We want to make this coaching session meaningful to you. Thank you ❤</p><br>
+        </section>
+        <form id="survey-form" style="background-color: lightgray">
+            <label for="name" id="name-label">Enter your full name:</label>
+            <input type=text placeholder="Thi Le" id="name" required><br><br>
+      
+            <label for="email" id="email-label">Enter your email:</label>
+            <input type=email placeholder="thilehoangy@gmail.com" id="email" required><br><br>
+  
+            <label for="number" id="number-label">Enter year of birth:</label>
+            <input type=number id="number" min="1" max="100" placeholder="19"><br><br>
+            
+            <label id="team-label" name="team">What team are you in?</label><br>
+            <input type="radio" name="team" value="ubk">Us Before Khan<br>
+            <input type="radio" name="team" value="tcok">The Color of Khan<br>
+            <input type="radio" name="team" value="subberhumans">Subberhumans<br>
+            <input type="radio" name="team" value="sunrise">Sunrise<br>
+            <input type="radio" name="team" value="wolfpack">Wolfpack<br>
+            <input type="radio" name="team" value="pb">Purple Black<br><br>
+
+            <label id="experience-label" name="experience">Have you experienced mental breakdown before?</label><br>
+            <input type="radio" name="experience" value="yes">Yes<br>
+            <input type="radio" name="experience" value="no">No<br>
+            <input type="radio" name="experience" value="both">Both<br><br>
+
+            <label id="cause-label" name="cause">What causes you anxiety and pressure the most?</label><br>
+            <input type="checkbox" name="cause" value="school/work">School/Work<br>
+            <input type="checkbox" name="cause" value="personal-relationship">Personal Relationship<br>
+            <input type="checkbox" name="cause" value="health">Health<br>
+            <input type="checkbox" name="cause" value="financial-condition">Financial Condition<br><br>
+
+            <label id="concern-label" name="concern">What aspect of mental breakdown are you most concerned with?</label><br>
+            <input type="radio" name="concern" value="yes">Sign that you have mental breakdown<br>
+            <input type="radio" name="concern" value="no">How to avoid mental breakdown<br>
+            <input type="radio" name="concern" value="no">How to deal with mental breakdown<br><br>
+
+            <label id="help-label" name="help">Do you need help with any specific problems, regarding this topic?</label><br>
+            <input type="radio" name="help" value="yes">Yes<br>
+            <input type="radio" name="help" value="no">No<br><br>
+
+            <label id="share-label" name="share">If yes, please share your experience.</label><br>
+            <textarea id="w3review" name="w3review" rows="4" cols="50" wrap="hard"></textarea><br><br>
+
+            <label id="submit-label"></label>
+            <input type="submit" id="submit">
+        </form>
+    </body>
+</html>
