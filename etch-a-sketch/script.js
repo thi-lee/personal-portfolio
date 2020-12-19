@@ -22,8 +22,8 @@ let color = document.createElement('button');
 color.textContent = 'Color';
 let chooseColor = document.createElement('input');
 chooseColor.type = 'color';
-chooseColor.value = '#5e7783';
-subColor.appendChild(color).classList.add('color');
+chooseColor.value = 'black';
+subColor.appendChild(color).classList.add('ccolor');
 subColor.appendChild(chooseColor).classList.add('chooseColor');
 
 
