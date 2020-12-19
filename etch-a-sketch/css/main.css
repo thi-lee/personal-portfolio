@@ -40,7 +40,7 @@ h3 {
     width: 100%;
     height: 100vh;
     color: #19547b;
-    background: linear-gradient(-45deg, #19547b, #d0d1d3, #d0d1d3, #19547b);
+    background: linear-gradient(-45deg, #19547b, #ffd89b, #ffd89b, #19547b);
     background-size: 400% 400%; 
     animation: backgroundGradient 15s ease infinite;
   }
@@ -103,9 +103,7 @@ button {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
     width: 100%; /* Full-width */
-    height: 5px; /* Specified height */
-    border: 1px solid #19547b;
-    border-radius: 10px;
+    height: 10px; /* Specified height */
     background: #d3d3d3; /* Grey background */
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
@@ -142,7 +140,7 @@ button {
     width: 600px;
     box-sizing: border-box;
     display: grid;
-    border: 5px #19547b solid;
+    border: 10px #19547b dotted;
 }
 
 .grid-item {
