@@ -1,0 +1,150 @@
+html, body {
+    height: 100vh;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.title {
+    /* style */
+    height: 15vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    /* h1 */
+    display: block;
+    font-size: 4em;
+    margin-top: 1.12em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h3 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.50em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    color: #19547b;
+    background: linear-gradient(-45deg, #19547b, #d0d1d3, #d0d1d3, #19547b);
+    background-size: 400% 400%; 
+    animation: backgroundGradient 15s ease infinite;
+  }
+  
+  @keyframes backgroundGradient {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+
+.main {
+    height: 85vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    width: 90px;
+    height: 40px;
+    margin: 1em;
+}
+
+.color {
+  padding: 0;
+  margin: 10px;
+}
+
+.chooseColor {
+  height: 25px;
+  width: 25px;
+}
+
+/* slider */
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 5px; /* Specified height */
+    border: 1px solid #19547b;
+    border-radius: 10px;
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    border-radius: 50%;
+    background: white;
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    border-radius: 50%;
+    cursor: pointer; /* Cursor on hover */
+    background: white;
+}
+
+/* slider */
+
+.container {
+    height: 600px;
+    width: 600px;
+    box-sizing: border-box;
+    display: grid;
+    border: 5px #19547b solid;
+}
+
+.grid-item {
+    background-color: transparent;
+}
